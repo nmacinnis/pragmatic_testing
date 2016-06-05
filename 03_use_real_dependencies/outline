@@ -1,0 +1,61 @@
+use real depenencies
+
+intro
+- intro to the series
+  - recap since it's been half a year
+  - pragmatism in software testing
+      - wolf of wall street picture?
+      - we don't care how it gets tested, because all we care about is shipping
+      - pragmatism is an ideal in most software development
+      - pragmatism is the only ideal in software testing
+  - how to achieve pragmatism
+      - MONEY
+      - think about writing tests in terms of ROI at all times
+      - dividends, expense ratios, etc
+  - so what is this series
+      - just a collection of lessons learned
+      - i didn't invent this stuff
+      - just documenting what has been observed to work well
+  - previous episodes
+      - delete your failing tests!
+        - tests that have been failing for some time: overhead with no dividends
+        - just delete em! you've got source control for a reason
+      - comment on everything!
+        - comments in production code often become liabilities
+        - comments in test code rarely outlive their usefulness
+  - this episode
+      - use real dependencies!
+
+- what does "use real dependencies" mean
+    - it means don't get carried away with mockery
+    - too much isolation can become impractical
+    - software can be tested as units but is rarely used that way
+
+talk about cost versus benefit
+
+what makes a mock good?
+- faithfulness to runtime behavior
+- ease of staging data for a test, lack of side effects, network calls, cleans up tidily during teardown
+- cheap to implement
+
+examine the options in terms of:
+  - how correct? how tidy?
+
+weigh against cost:
+  - implementation
+  - maintenance
+
+faithfulness
+- the actual thing (most faithful)
+- something very similar (sqlite for db)
+- wrapper with stubbed out side effects
+- totally standalone mock (least faithful)
+
+ease
+- depends on the system, not really a useful stratification
+
+cost to implement and maintain
+- the actual thing: free! it already exists
+- something very similar: only cost is what is involved in making it similar enough
+- wrapping+stubbing: fairly cheap, mostly boilerplate
+- standalone mock: written from scratch, most expensive
