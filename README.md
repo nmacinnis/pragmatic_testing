@@ -10,5 +10,5 @@ if you are reading this probably just go there instead eh
 This seems to work:
 
 ```
-docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll:pages
+docker run --rm --label=jekyll --volume=$(pwd):/srv/jekyll -it -p 127.0.0.1:4000:4000 jekyll/jekyll:pages jekyll serve
 ```
