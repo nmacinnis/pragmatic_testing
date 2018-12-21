@@ -22,9 +22,9 @@ used without attribution or permission.
 <ul class="posts">
   {% for post in site.posts reversed %}
     {% if post.title != 'template' %}
-      <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endif %}
   {% endfor %}
-  <li><a href="{{ BASE_PATH }}/template">template</a></li>
+  <li><a href="/template">template</a></li>
 </ul>
 
