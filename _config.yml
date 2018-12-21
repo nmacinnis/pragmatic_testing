@@ -14,7 +14,7 @@ author :
 
 production_url : https://nmacinnis.github.io/pragmatic_testing
 
-gems: ["jekyll-sitemap"]
+plugins: ["jekyll-sitemap"]
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
