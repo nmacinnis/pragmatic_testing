@@ -12,7 +12,7 @@ author :
   email : macinnis.nick@gmail.com
   github : nmacinnis
 
-production_url : http://nmacinnis.github.io/pragmatic_testing
+production_url : https://nmacinnis.github.io/pragmatic_testing
 
 gems: ["jekyll-sitemap"]
 
@@ -21,7 +21,7 @@ gems: ["jekyll-sitemap"]
 JB :
   version : 0.3.0
 
-  BASE_PATH : http://nmacinnis.github.io/pragmatic_testing
+  BASE_PATH : https://nmacinnis.github.io/pragmatic_testing
 
   ASSET_PATH : false
 
